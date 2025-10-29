@@ -43,5 +43,5 @@ If the dataset is empty, confirm that Finviz’s layout hasn’t changed.
 
 Just to let you know, pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to modify.
 
-👤 Author
+👤 Author:
 Aarogya Bikram Thapa
