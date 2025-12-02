@@ -10,6 +10,15 @@ Analyze the **real-time sentiment of stock market news** using Python, FinViz sc
 
 ---
 
+## Snaps
+
+<img width="1903" height="921" alt="Screenshot 2025-12-02 115705" src="https://github.com/user-attachments/assets/c2c9c3be-4a08-4602-8f4b-76d4bedfc10d" />
+
+<img width="1896" height="897" alt="Screenshot 2025-12-02 115846" src="https://github.com/user-attachments/assets/7cf5dc89-ab7a-4202-ae52-d6edbc3795a8" />
+
+
+---
+
 ## 🚀 Features
 
 - Scrapes **real-time news headlines** from FinViz for multiple stock tickers.
