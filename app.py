@@ -1,3 +1,8 @@
+import nltk
+try:
+    nltk.data.find("sentiment/vader_lexicon.zip")
+except LookupError:
+    nltk.download("vader_lexicon")
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -129,3 +134,4 @@ if st.button("Run Analysis"):
         st.pyplot(fig)
 
         st.success("Analysis Completed Successfully!")
+
