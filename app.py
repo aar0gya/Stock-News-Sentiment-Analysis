@@ -11,9 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
-# ------------------------------------------------
-# SCRAPER + SENTIMENT LOGIC (same as your main.py)
-# ------------------------------------------------
 
 FINVIZ_URL = "https://finviz.com/quote.ashx?t="
 HEADERS = {
@@ -134,4 +131,5 @@ if st.button("Run Analysis"):
         st.pyplot(fig)
 
         st.success("Analysis Completed Successfully!")
+
 
