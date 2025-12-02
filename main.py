@@ -74,7 +74,7 @@ if df.empty:
     exit()
 
 # ----------------------------------------
-# DATE PARSING (NO MORE WARNINGS 🚀)
+# DATE PARSING
 # ----------------------------------------
 def parse_date(date_str):
     if date_str is None:
