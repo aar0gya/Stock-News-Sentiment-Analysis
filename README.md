@@ -1,47 +1,78 @@
-# 📰 Stock News Sentiment Analysis
+# 📈 Stock News Sentiment Analysis
 
-A Python-based project that performs **sentiment analysis on financial news headlines** for selected stock tickers.  
-It scrapes news from [Finviz](https://finviz.com), analyzes sentiment using NLTK’s **VADER** model, and visualizes the resulting sentiment trends.
+Analyze the **real-time sentiment of stock market news** using Python, FinViz scraping, and VADER sentiment analysis. This project provides both **tabular data** and **visual sentiment charts** for multiple tickers in a **live web app** built with **Streamlit**.
+
+---
+
+## 🔗 Live Demo
+
+[Click here to access the live app](https://stock-news-sentiment-analysis-fzx7qmxy27r8jt7immruik.streamlit.app/)
 
 ---
 
 ## 🚀 Features
-- Fetches the latest stock-related news headlines for defined tickers.  
-- Uses **VADER (Valence Aware Dictionary and sEntiment Reasoner)** to compute sentiment scores.  
-- Aggregates sentiment per ticker and date.  
-- Visualizes sentiment trends using Matplotlib.
+
+- Scrapes **real-time news headlines** from FinViz for multiple stock tickers.
+- Performs **sentiment analysis** using the **VADER** lexicon.
+- Computes **daily average sentiment** per ticker.
+- Displays **interactive tables** and **bar charts** in a web browser.
+- Built with **Python**, **Streamlit**, **Pandas**, and **Matplotlib**.
+- Ready for **live deployment** on Streamlit Cloud.
 
 ---
 
-## 🧩 Requirements
-Install all dependencies before running:
+## 🛠 Tech Stack
+
+- **Python 3.11+**
+- **Streamlit** — web interface
+- **Pandas** — data processing
+- **Matplotlib** — visualization
+- **BeautifulSoup4 & Requests** — web scraping
+- **NLTK & VADER** — sentiment analysis
+
+---
+
+## 💡 How to Use Locally
+
+**Clone the repo**
+
+```bash
+git clone https://github.com/your-username/stock-news-sentiment-analysis.git
+cd stock-news-sentiment-analysis
+
+pip install -r requirements.txt
+
+streamlit run app.py
+
+Stock-News-Sentiment-Analysis/
+│
+├── app.py                 # Streamlit web app
+├── main.py                # Original CLI script
+├── vader_lexicon.txt      # VADER lexicon for sentiment analysis
+├── requirements.txt       # Python dependencies
+├── README.md              # Project overview
+└── LICENSE                # Open source license
+
+```
+
+⚡ Notes
+
+Streamlit Cloud automatically updates the app whenever you push to GitHub.
+
+FinViz may occasionally block requests — in that case, wait a few minutes and try again.
+
+The VADER lexicon is included to avoid runtime download issues in cloud deployment.
+
+---
+
+📈 Future Enhancements
+
+Add historical trend analysis for multiple tickers.
+
+Include sentiment heatmaps and ticker comparisons.
+
+Implement user authentication for personalized watchlists.
+
+Add export to CSV/Excel functionality.
 
 
-🧠 How It Works
-
-Web Scraping
-Retrieves news headlines for each ticker (e.g., AMZN, GOOG, META) from Finviz.
-
-Sentiment Analysis
-Uses VADER to assign a compound sentiment score to each headline.
-
-Visualization
-Averages sentiment scores per day and plots them for easy comparison.
-
-📈 Example Output
-
-The program generates a bar graph illustrating the positive or negative sentiment of recent news for each ticker over time.
-
-🛠️ Troubleshooting
-
-If no graph appears, Finviz may be blocking automated requests.
-Try changing your user-agent string or using a VPN.
-
-If the dataset is empty, confirm that Finviz’s layout hasn’t changed.
-
-🤝 Contributing
-
-Just to let you know, pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to modify.
-
-👤 Author:
-Aarogya Bikram Thapa
